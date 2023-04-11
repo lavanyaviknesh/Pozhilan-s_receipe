@@ -4,14 +4,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+
+
+
+<body onload="myfun()">
 
     <h1>BREAKFAST RECEIPES</h1>
-    <a target="_blank" href="https://www.youtube.com/watch?v=DU2KEuEKyrM">
+    <p id="Breakfast"></p>
+<!--    <a target="_blank" href="https://www.youtube.com/watch?v=DU2KEuEKyrM">
     <div class="image">
           <img src="image/Idli.jpg" alt="Idli receipe with batter" width="800" height="1000">
         <div class="desc">Idli receipe with batter</div>
       </div>
-    </a>
+    </a> -->
+    <script type="text/javascript">
+      function myfun() {
+      var details = [{
+        'img': "image/Idli.jpg",
+        'name': "Idli",
+        'url': "https://www.youtube.com/watch?v=DU2KEuEKyrM"
+      }, 
+      {
+        'img': "image/dosai.jpg",
+        'name': "Dosai",
+        'url': "https://www.youtube.com/watch?v=WyvbVp4G8gs"
+      }, 
+      {
+        'img': "image/poori.jpg",
+        'name': "Poori",
+        'url': "https://www.youtube.com/watch?v=ga7OhWAnJsU"
+      }];
+      
+      var html = "";
+      for (var i = 0, l = details.length; l > i; i++) {
+        
+        html += "<a target=\"_blank\" href=\"" + details[i].url + "\">";
+        html += "<div class=\"image\">";
+        html += "<img src=\"" + details[i].img + "\" alt=\"" + details[i].name + "\"width=\"800\" height=\"1000\"></a>";
+        html += "<div class=\"desc\">" + details[i].name + "</div>";
+        html += "</div> </a>";
+      }
+      
+      document.getElementById("Breakfast").innerHTML = html;
+    }
+      
+    </script>
 </body>
 </html>
