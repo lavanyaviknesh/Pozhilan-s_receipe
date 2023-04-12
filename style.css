@@ -1,21 +1,26 @@
 div.image {
-    margin: 5px;
+    margin: 20px;
     border: 3px solid #ccc;
     float: left;
-    width: 100px;
-    height: 100px; ;
+    width: 250px;
+    height: 250px; ;
   }
 
- 
+body {
+
+margin: 80px;
+border: 3px;
+
+}
   div.image:hover {
     border: 3px solid #777;
 
   }
 
 div.image img {
-    width: 50%;
-    height: 50%;
-    border-radius: 75%;
+    width: 80%;
+    height: 80%;
+    border-radius: 375%;
   }
   /* Add a black background color to the top navigation */
    .topnav {
