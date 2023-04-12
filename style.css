@@ -20,7 +20,7 @@ border: 3px;
 div.image img {
     width: 80%;
     height: 80%;
-    border-radius: 375%;
+    border-radius: 75%;
   }
   /* Add a black background color to the top navigation */
    .topnav {
