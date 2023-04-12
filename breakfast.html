@@ -17,27 +17,112 @@
       var details = [{
         'img': "image/Idli.jpg",
         'name': "Idli",
-        'url': "https://www.youtube.com/watch?v=DU2KEuEKyrM"
+        'url': "https://www.youtube.com/watch?v=8GZTCNzyMQM"
       }, 
       {
+        'img': "image/Podi Idly.jpg",
+        'name': "Podi Idli",
+        'url': "https://www.youtube.com/watch?v=hhjEW3Poi4Y"
+      },
+      {
         'img': "image/dosai.jpg",
-        'name': "Dosai",
-        'url': "https://www.youtube.com/watch?v=WyvbVp4G8gs"
+        'name': "Dosa",
+        'url': "https://www.youtube.com/watch?v=04ocg8FxJPc"
       }, 
+      {
+        'img': "image/egg dosa.jpeg",
+        'name': "Egg Dosa",
+        'url': "https://www.youtube.com/watch?v=507WhGB1hCI"
+      },
+      {
+        'img': "image/gopi dosa.jpg",
+        'name': "Gobi Masala Dosa ",
+        'url': "https://www.youtube.com/watch?v=8pC0-8oaFZg"
+      },
+      {
+        'img': "image/masala dosa.jpg",
+        'name': "Masala Dosa",
+        'url': "https://www.youtube.com/watch?v=IDNtiYTd7_M"
+      },
+      {
+        'img': "image/mushroom dosajpg.jpg",
+        'name': "Mushroom Dosa",
+        'url': "https://www.youtube.com/watch?v=711lTESLO10"
+      },
+      {
+        'img': "image/onion dosa.jpg",
+        'name': "Onion Dosa",
+        'url': "https://www.youtube.com/watch?v=qgDuIQ7PCGk"
+      },
+      {
+        'img': "image/podi dosa.jpg",
+        'name': "Podi Dosa",
+        'url': "https://www.youtube.com/watch?v=DKJvbqIWMn8"
+      },
       {
         'img': "image/poori.jpg",
         'name': "Poori",
-        'url': "https://www.youtube.com/watch?v=ga7OhWAnJsU"
+        'url': "https://www.youtube.com/watch?v=EVim4WbXrXk"
+      },
+      {
+        'img': "image/ven pongal.jpg",
+        'name': "Ven Pongal",
+        'url': "https://www.youtube.com/watch?v=twXXnefqCmw"
+      },
+      
+      {
+        'img': "image/RavaUpma.jpg",
+        'name': "Rava Upma",
+        'url': "https://www.youtube.com/watch?v=feAt7yadAjg"
+      },
+      {
+        'img': "image/aval upma.jpg",
+        'name': "Aval Upma",
+        'url': "https://www.youtube.com/watch?v=QWqyliuRlTo"
+      },
+      {
+        'img': "image/bread upma.jpg",
+        'name': "Bread Upma",
+        'url': "https://www.youtube.com/watch?v=XWfTqGpa4dk"
+      },
+      {
+        'img': "image/kichadi.jpg",
+        'name': "Rava Kichadi",
+        'url': "https://www.youtube.com/watch?v=puCRuBswoCw"
+      },
+      {
+        'img': "image/idli upma.jpg",
+        'name': "Idli Upma",
+        'url': "https://www.youtube.com/watch?v=CO5OOQwW628"
+      },
+      {
+        'img': "image/Uttapam.jpg",
+        'name': "Uttapam",
+        'url': "https://www.youtube.com/watch?v=5_LIPWRmduM"
+      },
+
+      {
+        'img': "image/puttu.jpg",
+        'name': "Puttu",
+        'url': "https://www.youtube.com/watch?v=hRxU0oS_Rck"
+      },
+
+      {
+
+        'img': "image/Appam.jpg",
+        'name': "Appam",
+        'url': "https://www.youtube.com/watch?v=yRpYqehvZ9o"
       }];
       
       var html = "";
       for (var i = 0, l = details.length; l > i; i++) {
         
-        html += "<a target=\"_blank\" href=\"" + details[i].url + "\">";
+        html += "<a href=\"" + details[i].url + "\">";
         html += "<div class=\"image\">";
-        html += "<img src=\"" + details[i].img + "\" alt=\"" + details[i].name + "\"width=\"800\" height=\"1000\"></a>";
+        html += "<img src=\"" + details[i].img + "\" alt=\"" + details[i].name + "\">";
         html += "<div class=\"desc\">" + details[i].name + "</div>";
-        html += "</div> </a>";
+        html += "</div>";
+        html += "</a>";
       }
       
       document.getElementById("Breakfast").innerHTML = html;
