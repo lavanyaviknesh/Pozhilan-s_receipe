@@ -1,7 +1,53 @@
 <html>
 <head>
+    <link rel="stylesheet" href="dinner.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-<h1>DINNER Receipe<h1>
+
+
+
+<body onload="myfun()">
+
+    <h1>Dinner RECEIPES</h1>
+
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      
+    </div>
+
+    <p id="Dinner"></p>
+
+    <script type="text/javascript">
+      function myfun() {
+      var details = [{
+        'img': "image/Idli.jpg",
+        'name': "Idli",
+        'url': "https://www.youtube.com/embed/8GZTCNzyMQM"
+      },
+
+      {
+
+        'img': "image/Appam.jpg",
+        'name': "Appam",
+        'url': "https://www.youtube.com/embed/yRpYqehvZ9o"
+      }];
+      
+      var html = "";
+      for (var i = 0, l = details.length; l > i; i++) {
+        
+        html += "<a href=\"" + details[i].url + "\">";
+        html += "<div class=\"image\">";
+        html += "<img src=\"" + details[i].img + "\" alt=\"" + details[i].name + "\">";
+        html += "<div class=\"desc\">" + details[i].name + "</div>";
+        html += "</div>";
+        html += "</a>";
+      }
+      
+      document.getElementById("Dinner").innerHTML = html;
+    }
+      
+    </script>
+
 </body>
 </html>

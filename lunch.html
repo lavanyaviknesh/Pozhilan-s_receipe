@@ -1,7 +1,204 @@
 <html>
 <head>
+    <link rel="stylesheet" href="Lunch.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-<h1>Lunch Receipe<h1>
+
+
+
+<body onload="myfun()">
+
+    <h1>Lunch RECEIPES</h1>
+
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      
+    </div>
+
+    <p id="Lunch"></p>
+
+    <script type="text/javascript">
+      function myfun() {
+      var details = [
+    { 
+        'img': "image/Sambar.jpg",
+        'name': "Arachi vitta Sambar",
+        'url': "https://www.youtube.com/embed/LEqReDI2jUI"
+      }, 
+      {
+        'img': "image/rasam.jpg",
+        'name': "Tomato Rasam",
+        'url': "https://www.youtube.com/embed/KUQvE1J5SEk"
+      },
+      {
+        'img': "image/karakolambu.jpg",
+        'name': "Chinna Vengayam Karakuzhambu",
+        'url': "https://www.youtube.com/embed/5q6HLbSt93c"
+      }, 
+      {
+        'img': "image/vatha.jpg",
+        'name': "Vathal kuzhambu.jpg",
+        'url': "https://www.youtube.com/embed/-JhdLK7MUaE"
+      },
+      {
+        'img': "image/urundai.jpg",
+        'name': "Urundai Kuzhambu",
+        'url': "https://www.youtube.com/embed/94qx_xL_wSU"
+      },
+      {
+
+        'img': "image/tamarind.jpg",
+        'name': "Tamarind Rice",
+        'url': "https://www.youtube.com/embed/LWzCUeNw-6g"
+      },
+      {
+        'img': "image/lemon.jpg",
+        'name': "Lemon Rice",
+        'url': "https://www.youtube.com/embed/Kkog1jDVS6M"
+      },
+      {
+        'img': "image/coconut.jpg",
+        'name': "Coconut Rice",
+        'url': "https://www.youtube.com/embed/EDaWLRQEv_I" 
+      },
+      {
+        'img': "image/putina.jpg",
+        'name': "Putina Rice",
+        'url': "https://www.youtube.com/embed/A-Aai-ornrs"
+      },
+      {
+        'img': "image/tomato.jpg",
+        'name': "Tomato Rice",
+        'url': "https://www.youtube.com/embed/IEW4XcFVlRc"
+      },
+      {
+        'img': "image/karuvepillai.jpg",
+        'name': "Karuvepillai Rice",
+        'url': "https://www.youtube.com/embed/bCSyg8rmvA0"
+      },
+      {
+        'img': "image/mango.jpg",
+        'name': "Manga Rice",
+        'url': "https://www.youtube.com/embed/QomluZyjW20"
+      },
+      {
+        'img': "image/sambarrice.jpg",
+        'name': "Sambar Rice",
+        'url': "https://www.youtube.com/embed/rNP83Cb5nzs"
+      },
+      {
+        'img': "image/curdrice.jpg",
+        'name': "Curd Rice",
+        'url': "https://www.youtube.com/embed/XxanE941wo4"
+      },
+      {
+        'img': "image/tomatotokku.jpg",
+        'name': "Tomato Tokku",
+        'url': "https://www.youtube.com/embed/KQiazWgEuDg"
+      },
+      {
+        'img': "image/meen.jpg",
+        'name': "Fish Kuzhambu",
+        'url': "https://www.youtube.com/embed/ifMgcz8R6Wc"
+      },
+      {
+        'img': "image/chicken.jpg",
+        'name': "Nattu Kozhi Kuzhambu",
+        'url': "https://www.youtube.com/embed/L2-h4iU3IxM" 
+      },
+      {
+        'img': "image/mutton.jpg",
+        'name': "Mutton Kuzhambu",
+        'url': "https://www.youtube.com/embed/KK21Er-enSA"
+      },
+      {
+        'img': "image/prawn.jpg",
+        'name': "Prawn Kuzhambu",
+        'url': "https://www.youtube.com/embed/7fVTZr-PZeY"
+      },
+      {
+        'img': "image/egg.jpg",
+        'name': "Egg Kuzhambu",
+        'url': "https://www.youtube.com/embed/43zGEGXdx_M"
+      },
+      {
+        'img': "image/nandu.jpg",
+        'name': "Nandu Rasam",
+        'url': "https://www.youtube.com/embed/KDhS2OsamLw"
+      },
+      {
+        'img': "image/vegbiryani.jpg",
+        'name': "Veg biryani",
+        'url': "https://www.youtube.com/embed/eDzRDI0IVvY"
+      },
+      {
+        'img': "image/chickenbiryani.jpg",
+        'name': "Chicken biryani",
+        'url': "https://www.youtube.com/embed/0T6-8kOb520"
+      },
+      {
+        'img': "image/muttonbiryani.jpg",
+        'name': "Mutton biryani",
+        'url': "https://www.youtube.com/embed/5cPT6Nv0cIo"
+      },
+      {
+        'img': "image/mushroombiryani.jpg",
+        'name': "Mushroom Biryani",
+        'url':"https://www.youtube.com/embed/PjD6VphwmRU"
+      },
+      {
+        'img': "image/prawnbriyani.jpg",
+        'name': "Prawn Briyani",
+        'url': "https://www.youtube.com/embed/z6CEfQcwBnM"
+      },
+      {
+        'img': "image/Eggbriyani1.jpg",
+        'name': "Egg Briyani",
+        'url': "https://www.youtube.com/embed/m5HK0rzwdtY"
+      },
+      {
+        'img': "image/vegpulao.jpg",
+        'name': "Veg Pulao",
+        'url': "https://www.youtube.com/embed/J7Y0qa0YRqQ"
+      },
+      {
+        'img': "image/cashew.jpg",
+        'name': "Cashew Pulao",
+        'url': "https://www.youtube.com/embed/O5_xAjClHEs"
+      },
+      {
+        'img': "image/vegfried.jpg",
+        'name': "Veg Friedrice",
+        'url': "https://www.youtube.com/embed/N-r9CRxqSRs"
+      },
+      {
+        'img': "image/chickenfried.jpg",
+        'name': "Chicken Friedrice",
+        'url': "https://www.youtube.com/embed/AG-L71lGvdI"
+      },
+      {
+        'img': "image/eggfried.jpg",
+        'name': "Egg Friedrice",
+        'url': "https://www.youtube.com/embed/XfKo1HM_7No"
+    
+      }];
+      
+      var html = "";
+      for (var i = 0, l = details.length; l > i; i++) {
+        
+        html += "<a href=\"" + details[i].url + "\">";
+        html += "<div class=\"image\">";
+        html += "<img src=\"" + details[i].img + "\" alt=\"" + details[i].name + "\">";
+        html += "<div class=\"desc\">" + details[i].name + "</div>";
+        html += "</div>";
+        html += "</a>";
+      }
+      
+      document.getElementById("Lunch").innerHTML = html;
+    }
+      
+    </script>
+
 </body>
 </html>
