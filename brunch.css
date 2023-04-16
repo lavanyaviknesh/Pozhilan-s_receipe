@@ -9,6 +9,13 @@ div.image {
     width: 300px;
     height: 300px; 
   }
+  .video-btn {
+    margin: 20px;
+    border: 3px solid #ccc;
+    float: left;
+    width: 300px;
+    height: 300px; 
+  }
 
   div.image:hover {
     border: 3px solid #777;
@@ -134,4 +141,53 @@ body {
     padding: 1px;
   } 
   
+}
+body
+{
+margin:0;
+padding:0;
+background-color:white !important;
+}
+.container
+{
+margin-top:12%
+}
+h1
+{
+margin-bottom: 50px !important;
+}
+.play-btn
+{
+width:50px;
+position:relative;
+top:-50%;
+cursor:pointer;
+transition:0.5s;
+opacity:0;
+}
+.col-md-4:hover .play-btn
+{
+opacity: 5;
+}
+
+.videomodal .modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}    
+.videomodal .modal-body {
+position:relative;
+padding:0px;
+}
+.videomodal .close {
+position:absolute;
+right:-30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:#fff;
+opacity:1;
+}
+.cursor-pointer{
+cursor: pointer;
 }
