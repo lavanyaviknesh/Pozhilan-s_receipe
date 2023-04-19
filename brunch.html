@@ -7,19 +7,40 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      </head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- linking the stylesheet(CSS) -->
+    <link rel="stylesheet" type="text/css" href="./brunch.css">
+    
+           </head>
 
 
 
 <body onload="myfun()">
- <h1>Brunch RECEIPES</h1>
-
+ <h1>BRUNCH RECEIPES</h1>
     <div class="topnav">
     <a class="active" href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
 
-
+    <!-- input tag -->
+    <div class="search-container">
+    <form action="/action_page.php">
+    <input id="searchbar" onkeyup="search_food()" type="text"
+        name="search" placeholder="Search food..">
+      </form> </div> </div>
+        <!-- ordered list -->
+ <ol id='list'>
+  <li class="food"><a href="#Idli With Batter">Idli with Batter</a></li> <br>
+  <li class="food"><a href="#Podi Idli">Podi Idli</a></li> <br>
+  <li class="food"><a href="#Poori">Poori</a></li> <br>
+  <li class="food"><a href="#Appam">Appam</a></li> <br>
+  <li class="food"><a href="#Bread Upma">Bread Upma</a></li> <br>
+  
+</ol>
+ 
+<!-- linking javascript -->
+<script src="./food.js"></script>
+    
+    
+    
     <p id="Breakfast"></p>
 
     <script type="text/javascript">
@@ -130,8 +151,10 @@
       
       var html = "";
       for (var i = 0, l = details.length; l > i; i++) {
-        html += "<div class=\"test\">";
-        html += "<img src=\"" + details[i].img + "\" class=\"video-btn img-fluid cursor-pointer\" data-toggle=\"modal\" data-src=\"" + details[i].url + "\" data-target=\"#myModal\">";
+        html += "<div class=\"" + details[i].name + "\">";
+        html += "<div class=\"image\">";
+        html += "<img src=\"" + details[i].img + "\" class=\"video-btn img-fluid cursor-pointer\" id=\"" + details[i].name + "\" data-toggle=\"modal\" data-src=\"" + details[i].url + "\" data-target=\"#myModal\">";
+        html += "<div class=\"desc\">" + details[i].name + "</div> </div>";
         html += "<div class=\"modal videomodal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">";
         html += "<div class=\"modal-dialog\" role=\"document\">";
         html += "<div class=\"modal-content\">";
@@ -141,7 +164,7 @@
         html += "</button>";
         html += "<div class=\"embed-responsive embed-responsive-16by9\">";
         html += "<iframe class=\"embed-responsive-item\" src=\"" + details[i].url + "\" id=\"video\"  allowscriptaccess=\"always\">></iframe>";
-        html += "</div> </div> </div> </div> </div>";
+        html += "</div> </div> </div> </div> </div> </div>";
       }
       
       document.getElementById("Breakfast").innerHTML = html;
@@ -166,6 +189,22 @@ $(document).ready(function() {
 });
 </script>
 
-   
+<script type="text/javascript">
+// JavaScript code
+function search_food() {
+	let input = document.getElementById('searchbar').value
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('food');
+	
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			x[i].style.display="none";
+		}
+		else {
+			x[i].style.display="list-item";				
+		}
+	}
+} </script>
+
 </body>
 </html>

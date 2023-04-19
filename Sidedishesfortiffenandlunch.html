@@ -1,2 +1,426 @@
+<html>
+<head>
+    <link rel="stylesheet" href="sidedish.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- linking the stylesheet(CSS) -->
+    <link rel="stylesheet" type="text/css" href="./sidedish.css">
+    
+           </head>
 
+
+
+<body onload="myfun()">
+
+ <h1>SIDEDISHES FOR TIFFEN AND LUNCH RECEIPIES</h1>
+
+ <div class="topnav">
+ <a class="active" href="index.html">Home</a>
+ 
+ <!-- input tag -->
+ <div class="search-container">
+ <form action="/action_page.php">
+ <input id="searchbar" onkeyup="search_food()" type="text"
+     name="search" placeholder="Search food..">
+   </form> </div> </div>
+     <!-- ordered list -->
+<ol id='list'>
+<li class="food"><a href="#Red Chilli Chutney">Red Chilli Chutney</a></li> <br>
+<li class="food"><a href="#Tomato Chutney">Tomato Chutney</a></li> <br>
+<li class="food"><a href="#Chilli Garlic Chutney">Chilli Garlic Chutney</a></li> <br>
+<li class="food"><a href="#Onion chutney">Onion chutney</a></li> <br>
+<li class="food"><a href="#Peanut Chutney">Peanut Chutney</a></li> <br>
+<li class="food"><a href="#Coconut Chutney">Coconut Chutney</a></li> <br>
+<li class="food"><a href="#Mint Chutney">Mint Chutney</a></li> <br>
+<li class="food"><a href="#Ginger Chutney">Ginger Chutney</a></li> <br>
+<li class="food"><a href="#White Kurma">White Kurma</a></li> <br>
+<li class="food"><a href="#Chettinad Vadacurry">Chettinad Vadacurry</a></li> <br>
+<li class="food"><a href="#Channa Masala">Channa Masala</a></li> <br>
+<li class="food"><a href="#Paneer Butter Masala">Paneer Butter Masala</a></li> <br>
+<li class="food"><a href="#Kumbakonam Kadapa">Kumbakonam Kadapa</a></li> <br>
+<li class="food"><a href="#Coconut Milk">Coconut Milk</a></li> <br>
+<li class="food"><a href="#Idli Podi">Idli Podi</a></li> <br>
+<li class="food"><a href="#Veg Salna">Veg Salna</a></li> <br>
+<li class="food"><a href="#Empty Salna">Empty Salna</a></li> <br>
+<li class="food"><a href="#Chicken Salna">Chicken Salna</a></li> <br>
+<li class="food"><a href="#Kondaikadalai Kari">Kondaikadalai Kari</a></li> <br>
+<li class="food"><a href="#Cabbage Poriyal">Cabbage Poriyal</a></li> <br>
+<li class="food"><a href="#Avial">Avial</a></li> <br>
+<li class="food"><a href="#Egg Omelet">Egg Omelet</a></li> <br>
+<li class="food"><a href="#Cabbage Kottu">Cabbage Kottu</a></li> <br>
+<li class="food"><a href="#Egg Podimas">Egg Podimas</a></li> <br>
+<li class="food"><a href="#Karandi Omelet">Karandi Omelet</a></li> <br>
+<li class="food"><a href="#Kalaki">Kalaki</a></li> <br>
+<li class="food"><a href="#Half Boil">Half Boil</a></li> <br>
+<li class="food"><a href="#Chicken Gravy">Chicken Gravy</a></li> <br>
+<li class="food"><a href="#Fish Fry">Fish Fry</a></li> <br>
+<li class="food"><a href="#Mutton Gravy">Mutton Gravy</a></li> <br>
+<li class="food"><a href="#Vazhakai Fry">Vazhakai Fry</a></li> <br>
+<li class="food"><a href="#Sepankizhangu Roast">Sepankizhangu Roast</a></li> <br>
+<li class="food"><a href="#ClusterBeans Poriyal">ClusterBeans Poriyal</a></li> <br>
+<li class="food"><a href="#Potato fry">Potato fry</a></li> <br>
+<li class="food"><a href="#LadiesFinger Poriyal">LadiesFinger Poriyal</a></li> <br>
+<li class="food"><a href="#Beans Poriyal">Beans Poriyal</a></li> <br>
+<li class="food"><a href="#Beans Paruppu Usili">Beans Paruppu Usili</a></li> <br>
+<li class="food"><a href="#Boiled Potato Fry">Boiled Potato Fry</a></li> <br>
+<li class="food"><a href="#Carrot Poriyal">Carrot Poriyal</a></li> <br>
+<li class="food"><a href="#BananaStem Kottu">BananaStem Kottu</a></li> <br>
+<li class="food"><a href="#BananaStem Poriyal">BananaStem Poriyal</a></li> <br>
+<li class="food"><a href="#Mixed Vegetable Pickle">Mixed Vegetable Pickle</a></li> <br>
+<li class="food"><a href="#Mango Pickle">Mango Pickle</a></li> <br>
+<li class="food"><a href="#Lemon Pickle">Lemon Pickle</a></li> <br>
+<li class="food"><a href="#Gooseberry Pickle">Gooseberry Pickle</a></li> <br>
+<li class="food"><a href="#Drumstick Pickle">Drumstick Pickle</a></li> <br>
+<li class="food"><a href="#Garlic Pickle">Garlic Pickle</a></li> <br>
+<li class="food"><a href="#Narthangai Pickle">Narthangai Pickle</a></li> <br>
+<li class="food"><a href="#Onion Pickle">Onion Pickle</a></li> <br>
+<li class="food"><a href="#Prawn Pickle">Prawn Pickle</a></li> <br>
+<li class="food"><a href="#Fish Pickle">Fish Pickle</a></li> <br>
+<li class="food"><a href="#Chicken Pickle">Chicken Pickle</a></li> <br>
+<li class="food"><a href="#Tomato Pickle">Tomato Pickle</a></li> <br>
+</ol>
+
+<!-- linking javascript -->
+<script src="./food.js"></script>
+ 
+    <p id="SIDEDISHES FOR TIFFEN AND LUNCH RECEIPIES"></p>
+
+    <script type="text/javascript">
+      function myfun() {
+      var details = [{
+        'img': "image/redchilli.jpg",
+        'name': "Red Chilli Chutney",
+        'url':"https://www.youtube.com/embed/i2h2Ie_tI0o"
+        
+      },
+      {
+        'img': "image/tomatochut.jpg",
+        'name': "Tomato Chutney",
+        'url': "https://www.youtube.com/embed/7iWddnbgkAE"
+      }, 
+      {
+        'img': "image/chilligarlic.jpg",
+        'name': "Chilli Garlic Chutney",
+        'url': "https://www.youtube.com/embed/GxX6_qztcRo"
+      }, 
+      {
+        'img': "image/onionchut.jpg",
+        'name': "Onion chutney",
+        'url': "https://www.youtube.com/embed/r_iGD-blcpo"
+      }, 
+      {
+        'img': "image/peanutchut.jpg",
+        'name': "Peanut Chutney",
+        'url': "https://www.youtube.com/embed/s9VNKE0S22c"
+      }, 
+      {
+        'img': "image/coconutchut.jpg",
+        'name': "Coconut Chutney",
+        'url': "https://www.youtube.com/embed/KNiL5NqamWo"
+      }, 
+      {
+        'img': "image/mintchut.jpg",
+        'name': "Mint Chutney",
+        'url': "https://www.youtube.com/embed/ckSswUsTFAs"
+      }, 
+      {
+        'img': "image/gingerchut.jpg",
+        'name': "Ginger Chutney",
+        'url': "https://www.youtube.com/embed/yNChO3-uZ_4"
+      }, 
+      {
+        'img': "image/whitekurma.jpg",
+        'name': "White Kurma",
+        'url': "https://www.youtube.com/embed/f7HiL8AHjpE"
+      }, 
+      {
+        'img': "image/chetvadacurry.jpg",
+        'name': "Chettinad Vadacurry",
+        'url': "https://www.youtube.com/embed/43hEn6cuPVw"
+      }, 
+      {
+        'img': "image/chanamasala.jpg",
+        'name': "Channa Masala",
+        'url': "https://www.youtube.com/embed/3ms50piEpmE"
+      }, 
+      {
+        'img': "image/paneermasala.jpg",
+        'name': "Paneer Butter Masala",
+        'url': "https://www.youtube.com/embed/sVNQIbuv_Mc"
+      }, 
+      {
+        'img': "image/kadapa.jpg",
+        'name': "Kumbakonam Kadapa",
+        'url': "https://www.youtube.com/embed/snsp1q_RTp4"
+      }, 
+      {
+        'img': "image/Coconutmilk.jpg",
+        'name': "Coconut Milk",
+        'url': "https://www.youtube.com/embed/D77bKyguk1Q"
+      }, 
+      {
+        'img': "image/IdliPodi.jpg",
+        'name': "Idli Podi",
+        'url': "https://www.youtube.com/embed/zKSf2KrVCk4"
+      }, 
+      {
+        'img': "image/vegsalna.jpg",
+        'name': "Veg Salna",
+        'url': "https://www.youtube.com/embed/VXB70ZFtWC0"
+      }, 
+      {
+        'img': "image/EmptySalna.jpg",
+        'name': "Empty Salna",
+        'url': "https://www.youtube.com/embed/y7kPBiC9mN8"
+      }, 
+      {
+        'img': "image/chicksalna.jpg",
+        'name': "Chicken Salna",
+        'url': "https://www.youtube.com/embed/F4AmZpu4098"
+      }, 
+      {
+        'img': "image/kadalaikari.jpg",
+        'name': "Kondaikadalai Kari",
+        'url': "https://www.youtube.com/embed/8tUHIN4FeTo"
+      }, 
+      {
+        'img': "image/cabbageporiyal.jpg",
+        'name': "Cabbage Poriyal",
+        'url': "https://www.youtube.com/embed/As1l1KR6rR8"
+      
+      }, 
+      {
+        'img': "image/cabkootu.jpg",
+        'name': "Cabbage Kottu",
+        'url': "https://www.youtube.com/embed/02GKGlW13MY"
+      }, 
+      {
+        'img': "image/avial.jpg",
+        'name': "Avial",
+        'url': "https://www.youtube.com/embed/Yooz6GEHdb4"
+      }, 
+      {
+        'img': "image/eggpodimas.jpg",
+        'name': "Egg Podimas",
+        'url': "https://www.youtube.com/embed/_gm7pfbMYZw"
+      }, 
+      {
+        'img': "image/eggomelet.jpg",
+        'name': "Egg Omelet",
+        'url': "https://www.youtube.com/embed/-RbfejvJHJ8"
+      }, 
+      {
+        'img': "image/karomelete.jpg",
+        'name': "Karandi Omelet",
+        'url': "https://www.youtube.com/embed/G5fWJMdjph4"
+      }, 
+      {
+        'img': "image/kalaki.jpg",
+        'name': "Kalaki",
+        'url': "https://www.youtube.com/embed/GDg5vJurNuc"
+      }, 
+      {
+        'img': "image/halfboil.jpg",
+        'name': "Half Boil",
+        'url': "https://www.youtube.com/embed/fcWvb35ywHw"
+      }, 
+      {
+        'img': "image/chickengravy.jpg",
+        'name': "Chicken Gravy",
+        'url': "https://www.youtube.com/embed/OY6FvWFuozw"
+      }, 
+      {
+        'img': "image/fishfry.jpg",
+        'name': "Fish Fry",
+        'url': "https://www.youtube.com/embed/kr9g7qHFVqA"
+      }, 
+      {
+        'img': "image/mutgravy.jpg",
+        'name': "Mutton Gravy",
+        'url': "https://www.youtube.com/embed/0IvPIvB1PhY"
+    
+      }, 
+      {
+        'img': "image/vazhakaivaru.jpg",
+        'name': "Vazhakai Fry",
+        'url': "https://www.youtube.com/embed/ZW7TKMos818"
+      }, 
+      {
+        'img': "image/chepkizh.jpg",
+        'name': "Sepankizhangu Roast",
+        'url': "https://www.youtube.com/embed/IBl93SxVS8Y"
+      }, 
+      {
+        'img': "image/clustbean.jpg",
+        'name': "ClusterBeans Poriyal",
+        'url': "https://www.youtube.com/embed/-rceq97RQwM"
+      }, 
+      {
+        'img': "image/potatovaruval.jpg",
+        'name': "Potato fry",
+        'url': "https://www.youtube.com/embed/_SprGViW1dc"
+      }, 
+      {
+        'img': "image/vendporiyal.jpg",
+        'name': "LadiesFinger Poriyal",
+        'url': "https://www.youtube.com/embed/M25IhiCX84Y"
+      }, 
+      {
+        'img': "image/beansporiyal.jpg",
+        'name': "Beans Poriyal ",
+        'url': "https://www.youtube.com/embed/v5HPvx9D1b4"
+      }, 
+      {
+        'img': "image/beausili.jpg",
+        'name': "Beans Paruppu Usili",
+        'url': "https://www.youtube.com/embed/-9QfE94cUvs"
+      }, 
+      {
+        'img': "image/boiledpot.jpg",
+        'name': "Boiled Potato Fry",
+        'url': "https://www.youtube.com/embed/PeLZ4b3RjaM"
+      }, 
+      {
+        'img': "image/carpor.jpg",
+        'name': "Carrot Poriyal",
+        'url': "https://www.youtube.com/embed/_PlGZX9qfno"
+      }, 
+      {
+        'img': "image/bananastemkottu.jpg",
+        'name': "BananaStem Kottu",
+        'url': "https://www.youtube.com/embed/SuBbTYiyeqE"
+      }, 
+      {
+        'img': "image/bananastempori.jpg",
+        'name': "BananaStem Poriyal",
+        'url': "https://www.youtube.com/embed/dqKd5ngYPsk"
+      }, 
+      {
+        'img': "image/mixvegpick.jpg",
+        'name': "Mixed Vegetable Pickle",
+        'url': "https://www.youtube.com/embed/xkaHiYKbHSQ"
+      }, 
+      {
+        'img': "image/mangopick.jpg",
+        'name': "Mango Pickle",
+        'url': "https://www.youtube.com/embed/xaPiRmxRSc8"
+      }, 
+      {
+        'img': "image/lemonpick.jpg",
+        'name': "Lemon Pickle",
+        'url': "https://www.youtube.com/embed/eVno7PuJknA"
+      }, 
+      {
+        'img': "image/nellipick.jpg",
+        'name': "Gooseberry Pickle",
+        'url': "https://www.youtube.com/embed/00F0zWSjt9w"
+      }, 
+      {
+        'img': "image/drumpick.jpg",
+        'name': "Drumstick Pickle",
+        'url': "https://www.youtube.com/embed/g1YBrdgjOQU"
+      }, 
+      {
+        'img': "image/garpick.jpg",
+        'name': "Garlic Pickle",
+        'url': "https://www.youtube.com/embed/IG-Yqcm1p74"
+      }, 
+      {
+        'img': "image/narthanpickle.jpg",
+        'name': "Narthangai Pickle",
+        'url': "https://www.youtube.com/embed/bF1x8MXlMho"
+      }, 
+      {
+        'img': "image/oniopick.jpg",
+        'name': "Onion Pickle",
+        'url': "https://www.youtube.com/embed/rrYF4qbMpPM"
+      }, 
+      {
+        'img': "image/prawpick.jpg",
+        'name': "Prawn Pickle",
+        'url': "https://www.youtube.com/embed/HE2Z4EyyPro"
+      }, 
+      {
+        'img': "image/fispick.jpg",
+        'name': "Fish Pickle",
+        'url': "https://www.youtube.com/embed/8LyvjLBhZzE"
+      }, 
+      {
+        'img': "image/chickpick.jpg",
+        'name': "Chicken Pickle",
+        'url': "https://www.youtube.com/embed/JdRlR7iU1xE"
+      }, 
+      {
+        'img': "image/tompic.jpg",
+        'name': "Tomato Pickle",
+        'url': "https://www.youtube.com/embed/jU3kbQC9brs"
+      }, 
+      
+      
+    ];
+ 
+    var html = "";
+      for (var i = 0, l = details.length; l > i; i++) {
+        html += "<div class=\"" + details[i].name + "\">";
+        html += "<div class=\"image\">";
+        html += "<img src=\"" + details[i].img + "\" class=\"video-btn img-fluid cursor-pointer\" id=\"" + details[i].name + "\" data-toggle=\"modal\" data-src=\"" + details[i].url + "\" data-target=\"#myModal\">";
+        html += "<div class=\"desc\">" + details[i].name + "</div> </div>";
+        html += "<div class=\"modal videomodal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">";
+        html += "<div class=\"modal-dialog\" role=\"document\">";
+        html += "<div class=\"modal-content\">";
+        html += "<div class=\"modal-body\">";
+        html += "<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">";
+        html += "<span aria-hidden=\"true\">&times;</span>";
+        html += "</button>";
+        html += "<div class=\"embed-responsive embed-responsive-16by9\">";
+        html += "<iframe class=\"embed-responsive-item\" src=\"" + details[i].url + "\" id=\"video\"  allowscriptaccess=\"always\">></iframe>";
+        html += "</div> </div> </div> </div> </div> </div>";
+      }
+      
+      document.getElementById("SIDEDISHES FOR TIFFEN AND LUNCH RECEIPIES").innerHTML = html;
+    }
+      
+    </script>
+
+<script type="text/javascript">
+  //for youtube video modal
+$(document).ready(function() {
+    var $videoSrc;  
+    $('.video-btn').click(function() {
+        $videoSrc = $(this).data( "src" );
+    });
+    console.log($videoSrc);
+    $('#myModal').on('shown.bs.modal', function (e) {
+    $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
+    })
+    $('#myModal').on('hide.bs.modal', function (e) {
+        $("#video").attr('src',$videoSrc); 
+    })
+});
+</script>
+
+<script type="text/javascript">
+// JavaScript code
+function search_food() {
+	let input = document.getElementById('searchbar').value
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('food');
+	
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			x[i].style.display="none";
+		}
+		else {
+			x[i].style.display="list-item";				
+		}
+	}
+} </script>
+
+     </body>
+</html>
 
