@@ -24,13 +24,15 @@
 
  <!-- input tag -->
  <div class="search-container">
- <form action="/action_page.php">
- <input id="searchbar" onkeyup="search_food()" type="text"
-     name="search" placeholder="Search food..">
-   </form> </div> </div>
-     <!-- ordered list -->
-<ol id='list'>
-  <li class="food"><a href="#Red Chilli Chutney">Red Chilli Chutney</a></li> <br>
+  <form action="/action_page.php">
+  <input id="searchbar" onkeyup="search_food()" type="text"
+      name="search" placeholder="Search food..">
+    </form> </div> </div>
+      <!-- ordered list -->
+ <ol id='list'>
+ 
+  <li class="food"><a href="#PaneerTikka">Paneer Tikka</a></li> <br>
+  <li class="food"><a href="#"></a></li> <br>
   <li class="food"><a href="#"></a></li> <br>
   <li class="food"><a href="#"></a></li> <br>
   <li class="food"><a href="#"></a></li> <br>
@@ -97,7 +99,7 @@
         'url': "https://www.youtube.com/embed/NyDu2LmdAtM"
       }, 
       {
-        'img': "image/pot65",
+        'img': "image/pot65.jpg",
         'name': "Potato-65",
         'url': "https://www.youtube.com/embed/OJkswjo8hpA"
       }, 
@@ -139,35 +141,35 @@
       {
         'img': "image/hotsou.jpg",
         'name': "Hot&Sour Soup",
-        'url': ""
+        'url': "https://www.youtube.com/embed/opQZtAxs3hI"
       }, 
       {
         'img': "image/swecor.jpg",
         'name': "Sweet Corn Soup",
-        'url': ""
+        'url': "https://www.youtube.com/embed/UbSzhDu16PM"
       }, 
       {
         'img': "image/lemcor.jpg",
         'name': "Lemon Coriander Soup",
-        'url': ""
+        'url': "https://www.youtube.com/embed/unmK5LmScDg"
       }, 
       {
         'img': "image/babcorsoup.jpg",
         'name': "BabyCorn Soup",
-        'url': ""
+        'url': "https://www.youtube.com/embed/al3j4rICYQk"
       }, 
       {
         'img': "image/swepot.jpg",
         'name': "Sweet Potato Soup",
-        'url': ""
+        'url': "https://www.youtube.com/embed/EXuclLTCXRk"
       }, 
       {
         'img': "image/cremus.jpg",
         'name': "Creamy Mushroom Soup ",
-        'url': ""
+        'url': "https://www.youtube.com/embed/jNq_JbtxD94"
       }, 
       ];
-    var html = "";
+      var html = "";
       for (var i = 0, l = details.length; l > i; i++) {
         html += "<div class=\"" + details[i].name + "\">";
         html += "<div class=\"image\">";
@@ -206,24 +208,23 @@ $(document).ready(function() {
     })
 });
 </script>
-
 <script type="text/javascript">
-// JavaScript code
-function search_food() {
-	let input = document.getElementById('searchbar').value
-	input=input.toLowerCase();
-	let x = document.getElementsByClassName('food');
-	
-	for (i = 0; i < x.length; i++) {
-		if (!x[i].innerHTML.toLowerCase().includes(input)) {
-			x[i].style.display="none";
-		}
-		else {
-			x[i].style.display="list-item";				
-		}
-	}
-} </script>
-
+  // JavaScript code
+  function search_food() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('food');
+    
+    for (i = 0; i < x.length; i++) {
+      if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        x[i].style.display="none";
+      }
+      else {
+        x[i].style.display="list-item";				
+      }
+    }
+  } </script>
+  
      </body>
 </html>
 

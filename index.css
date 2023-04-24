@@ -11,6 +11,8 @@
 }
 .img-responsive{
     width: 100%;
+    height: 100%;
+
 }
 .img-curve{
     border-radius: 15px;
@@ -68,7 +70,4 @@ h3{
 body{
     color:blue ;
     background-color: #ff4757;
-
-
-
 }

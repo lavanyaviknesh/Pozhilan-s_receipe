@@ -522,3 +522,12 @@ margin-left: 90px;
 .image{
 display: list-item;	
 }
+
+ol li {
+  display: none;
+}
+div.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 75%;
+}

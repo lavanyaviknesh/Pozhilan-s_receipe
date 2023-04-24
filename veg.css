@@ -1,6 +1,6 @@
 body { 
     color:black;
-    background-color:rgb(25, 2, 25)
+    background-color:black;
 }
 div.image {
     margin: 20px;
@@ -12,6 +12,7 @@ div.image {
 
   div.image:hover {
     border: 3px solid #777;
+    
 
   }
 
@@ -60,14 +61,14 @@ body {
 .navbar a {
   float: center;
   font-size: 16px;
-  color:black;
+  color:whitesmoke;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 body { 
   color:black;
-  background-color:crimson
+  background-color:crimson;
 }
 div.image{
   color: black;
@@ -84,7 +85,10 @@ h1{
   text-align: center;
   color: black;
 }
-div.image{
-  color: black;
-    background-color:black;
+element.style {
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: transparent;
 }
