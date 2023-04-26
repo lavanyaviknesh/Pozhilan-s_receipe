@@ -243,3 +243,6 @@ display: list-item;
   height: 500px;
   background-color: lightblue;
 }
+
+ol li
+{ display: none }
