@@ -3,18 +3,39 @@
     <link rel="stylesheet" href="Lunch.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- linking the stylesheet(CSS) -->
+    <link rel="stylesheet" type="text/css" href="./Lunch.css">
+    
+           </head>
 
 
 
 <body onload="myfun()">
 
-    <h1>LUNCH RECEIPES</h1>
+ <h1>LUNCH RECEIPIES</h1>
 
-    <div class="topnav">
-      <a class="active" href="index.html">Home</a>
-      
-    </div>
+ <div class="topnav">
+ <a class="active" href="index.html">Home</a>
+
+ <!-- input tag -->
+ <div class="search-container">
+ <form action="/action_page.php">
+ <input id="searchbar" onkeyup="search_food()" type="text"
+     name="search" placeholder="Search food..">
+   </form> </div> </div>
+     <!-- ordered list -->
+<ol id='list'>
+  <li class="food"><a href="#ChanaDal Vada">ChanaDal Vada</a></li>
+  <li class="food"><a href="#Medu Vada">Medu Vada</a></li> 
+</ol>
+
+<!-- linking javascript -->
+<script src="./food.js"></script>
 
     <p id="Lunch"></p>
 
@@ -186,19 +207,61 @@
       
       var html = "";
       for (var i = 0, l = details.length; l > i; i++) {
-        
-        html += "<a href=\"" + details[i].url + "\">";
+        html += "<div class=\"" + details[i].name + "\">";
         html += "<div class=\"image\">";
-        html += "<img src=\"" + details[i].img + "\" alt=\"" + details[i].name + "\">";
-        html += "<div class=\"desc\">" + details[i].name + "</div>";
-        html += "</div>";
-        html += "</a>";
+        html += "<img src=\"" + details[i].img + "\" class=\"video-btn img-fluid cursor-pointer\" id=\"" + details[i].name + "\" data-toggle=\"modal\" data-src=\"" + details[i].url + "\" data-target=\"#myModal\">";
+        html += "<div class=\"desc\">" + details[i].name + "</div> </div>";
+        html += "<div class=\"modal videomodal fade\" id=\"myModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">";
+        html += "<div class=\"modal-dialog\" role=\"document\">";
+        html += "<div class=\"modal-content\">";
+        html += "<div class=\"modal-body\">";
+        html += "<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">";
+        html += "<span aria-hidden=\"true\">&times;</span>";
+        html += "</button>";
+        html += "<div class=\"embed-responsive embed-responsive-16by9\">";
+        html += "<iframe class=\"embed-responsive-item\" src=\"" + details[i].url + "\" id=\"video\"  allowscriptaccess=\"always\">></iframe>";
+        html += "</div> </div> </div> </div> </div> </div>";
       }
       
       document.getElementById("Lunch").innerHTML = html;
     }
       
     </script>
+
+<script type="text/javascript">
+  //for youtube video modal
+$(document).ready(function() {
+    var $videoSrc;  
+    $('.video-btn').click(function() {
+        $videoSrc = $(this).data( "src" );
+    });
+    console.log($videoSrc);
+    $('#myModal').on('shown.bs.modal', function (e) {
+    $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" ); 
+    })
+    $('#myModal').on('hide.bs.modal', function (e) {
+        $("#video").attr('src',$videoSrc); 
+    })
+});
+</script>
+
+<script type="text/javascript">
+// JavaScript code
+function search_food() {
+	let input = document.getElementById('searchbar').value
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('food');
+	
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			x[i].style.display="none";
+		}
+		else {
+			x[i].style.display="list-item";				
+		}
+	}
+} </script>
+
 
 </body>
 </html>
