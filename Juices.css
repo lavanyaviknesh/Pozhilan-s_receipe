@@ -91,7 +91,11 @@ a {
 }
 
 ol li
-{ display: none }
+{ display: none;
+  }
+ol li span
+{background-color: #070707; }
+
 div.image{
   color: black;
     background-color:black;
