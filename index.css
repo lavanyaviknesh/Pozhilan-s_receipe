@@ -4,6 +4,11 @@
     padding: 0 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
 .container{
     width: 80%;
     margin: 0 auto;
@@ -28,7 +33,7 @@
     text-align: left;
 }
 .text-white{
-    color: white;
+    color: rgb(218, 15, 15);
 }
 
 .clearfix{
@@ -52,11 +57,11 @@ a:hover{
 }
 .btn-primary{
     background-color: #ff6b81;
-    color: white;
+    color: rgb(191, 19, 19);
     cursor: pointer;
 }
 .btn-primary:hover{
-    color: white;
+    color: rgb(207, 20, 20);
     background-color: #ff4757;
 }
 h2{

@@ -68,7 +68,7 @@ text-decoration: none;
 }
 body { 
 color:black;
-background-color:cadetblue;
+background-color:rgb(23, 146, 23);
 }
 div.image{
 color: black;
@@ -79,14 +79,16 @@ padding: 15px;
 text-align: center;
 color:whitesmoke;
 }
-.bg-image {
-background: url(image/sweets.jpg);
-}
 
 h1{
 padding: 15px;
 text-align: center;
 color: black;
+}
+h1 span {
+  background-color: #333;
+  border-radius: 15px;
+  white-space: pre-wrap;
 }
 a {
   color: whitesmoke;
@@ -105,12 +107,12 @@ div.image{
   
   body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   .topnav {
   overflow: hidden;
-  background-color:rgb(61, 61, 74);
+  background-color:rgb(32, 32, 46);
   }
   
   .topnav a {
@@ -178,6 +180,7 @@ div.image{
   h1
   {
   margin-bottom: 10px !important;
+  color:whitesmoke;
   }
   .play-btn
   {
