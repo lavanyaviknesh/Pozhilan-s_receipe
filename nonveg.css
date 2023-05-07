@@ -1,4 +1,7 @@
-
+body { 
+  color:black;
+  background-color:black;
+}
 div.image {
   margin: 20px;
   border: 3px solid #ccc;
@@ -46,7 +49,9 @@ div.image img {
 background-color: #04AA6D;
 color: black;
 }
-
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
 
 .navbar {
 overflow: hidden;
@@ -63,6 +68,7 @@ text-decoration: none;
 }
 body { 
 color:black;
+background-color:rgb(223, 15, 15);
 }
 div.image{
 color: black;
@@ -79,11 +85,6 @@ padding: 15px;
 text-align: center;
 color: black;
 }
-h1 span {
-  background-color: #333;
-  border-radius: 15px;
-  white-space: pre-wrap;
-}
 a {
   color: whitesmoke;
   text-decoration: none;
@@ -91,11 +92,7 @@ a {
 }
 
 ol li
-{ display: none;
-  }
-ol li span
-{background-color: #070707; }
-
+{ display: none }
 div.image{
   color: black;
     background-color:black;
@@ -105,12 +102,12 @@ div.image{
   
   body {
   margin: 0;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   }
   
   .topnav {
   overflow: hidden;
-  background-color:rgb(32, 32, 46);
+  background-color:rgb(61, 61, 74);
   }
   
   .topnav a {
@@ -178,7 +175,6 @@ div.image{
   h1
   {
   margin-bottom: 10px !important;
-  color:whitesmoke;
   }
   .play-btn
   {
@@ -257,7 +253,7 @@ div.image{
   }
   
   input[type=text] {
-  width: 70%;
+  width: 10%;
   }
   
   /* When the input field gets focus,

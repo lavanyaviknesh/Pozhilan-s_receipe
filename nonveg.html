@@ -10,14 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
          <!-- linking the stylesheet(CSS) -->
     <link rel="stylesheet" type="text/css" href="./nonveg.css">
-    <style>
-      body, html {
-      position: relative;
-      background-image: url("image/blurnonveg.jpg");
-      background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      } </style>
     
            </head>
 
@@ -25,7 +17,7 @@
 
 <body onload="myfun()">
 
- <h1><span>  NON-VEG STARTERS  </span></h1>
+ <h1>NON-VEG STARTERS RECIPES</h1>
 
  <div class="topnav">
  <a class="active" href="index.html">Home</a>
@@ -38,30 +30,30 @@
    </form> </div> </div>
      <!-- ordered list -->
 <ol id='list'>
-  <li class="food"><a href="#Chicken 65"><span>Chicken 65</span></a></li> 
-<li class="food"><a href="#Tandoori Chicken"><span>Tandoori Chicken</span></a></li> 
-<li class="food"><a href="#Barbecue Chicken"><span>Barbecue Chicken</span></a></li> 
-<li class="food"><a href="#Grilled Chicken"><span>Grilled Chicken</span></a></li> 
-<li class="food"><a href="#Chilli Chicken"><span>Chilli Chicken</span></a></li> 
-<li class="food"><a href="#Chicken Manchurian"><span>Chicken Manchurian</span></a></li> 
-<li class="food"><a href="#Grilled Chicken Tikka"><span>Grilled Chicken Tikka</span></a></li> 
-<li class="food"><a href="#Chicken Kola Urundai"><span>Chicken Kola Urundai</span></a></li> 
-<li class="food"><a href="#Mutton Kola Urundai"><span>Mutton Kola Urundai</span></a></li> 
-<li class="food"><a href="#Dragon Chicken"><span>Dragon Chicken</span></a></li> 
-<li class="food"><a href="#Chicken Lollipop"><span>Chicken Lollipop</span></a></li> 
-<li class="food"><a href="#Pepper Chicken Fry"><span>Pepper Chicken Fry</span></a></li> 
-<li class="food"><a href="#Mutton Chukka"><span>Mutton Chukka</span></a></li> 
-<li class="food"><a href="#Mutton Pepper Fry"><span>Mutton Pepper Fry</span></a></li> 
-<li class="food"><a href="#Fish Finger"><span>Fish Finger</span></a></li> 
-<li class="food"><a href="#Fish Chilli"><span>Fish Chilli</span></a></li> 
-<li class="food"><a href="#Fish Manchurian"><span>Fish Manchurian</span></a></li> 
-<li class="food"><a href="#Prawn-65"><span>Prawn-65</span></a></li> 
-<li class="food"><a href="#Prawn Chilli"><span>Prawn Chilli</span></a></li> 
-<li class="food"><a href="#Prawn Manchurian"><span>Prawn Manchurian</span></a></li> 
-<li class="food"><a href="#Crab Lollipop"><span>Crab Lollipop</span></a></li> 
-<li class="food"><a href="#Shawarma Roll"><span>Shawarma Roll</span></a></li> 
-<li class="food"><a href="#Chicken Soup"><span>Chicken Soup</span></a></li> 
-<li class="food"><a href="#Mutton Soup"><span>Mutton Soup</span></a></li> 
+  <li class="food"><a href="#Chicken 65">Chicken 65</a></li> 
+<li class="food"><a href="#Tandoori Chicken">Tandoori Chicken</a></li> 
+<li class="food"><a href="#Barbecue Chicken">Barbecue Chicken</a></li> 
+<li class="food"><a href="#Grilled Chicken">Grilled Chicken</a></li> 
+<li class="food"><a href="#Chilli Chicken">Chilli Chicken</a></li> 
+<li class="food"><a href="#Chicken Manchurian">Chicken Manchurian</a></li> 
+<li class="food"><a href="#Grilled Chicken Tikka">Grilled Chicken Tikka</a></li> 
+<li class="food"><a href="#Chicken Kola Urundai">Chicken Kola Urundai</a></li> 
+<li class="food"><a href="#Mutton Kola Urundai">Mutton Kola Urundai</a></li> 
+<li class="food"><a href="#Dragon Chicken">Dragon Chicken</a></li> 
+<li class="food"><a href="#Chicken Lollipop">Chicken Lollipop</a></li> 
+<li class="food"><a href="#Pepper Chicken Fry">Pepper Chicken Fry</a></li> 
+<li class="food"><a href="#Mutton Chukka">Mutton Chukka</a></li> 
+<li class="food"><a href="#Mutton Pepper Fry">Mutton Pepper Fry</a></li> 
+<li class="food"><a href="#Fish Finger">Fish Finger</a></li> 
+<li class="food"><a href="#Fish Chilli">Fish Chilli</a></li> 
+<li class="food"><a href="#Fish Manchurian">Fish Manchurian</a></li> 
+<li class="food"><a href="#Prawn-65">Prawn-65</a></li> 
+<li class="food"><a href="#Prawn Chilli">Prawn Chilli</a></li> 
+<li class="food"><a href="#Prawn Manchurian">Prawn Manchurian</a></li> 
+<li class="food"><a href="#Crab Lollipop">Crab Lollipop</a></li> 
+<li class="food"><a href="#Shawarma Roll">Shawarma Roll</a></li> 
+<li class="food"><a href="#Chicken Soup">Chicken Soup</a></li> 
+<li class="food"><a href="#Mutton Soup">Mutton Soup</a></li> 
 
 
 </ol>
@@ -211,7 +203,7 @@
         html += "<span aria-hidden=\"true\">&times;</span>";
         html += "</button>";
         html += "<div class=\"embed-responsive embed-responsive-16by9\">";
-          html += "<iframe class=\"embed-responsive-item\" src=\"" + details[i].url + "\" id=\"video\"  allowscriptaccess=\"always\" frameborder=\"0\" allowfullscreen ></iframe>";
+        html += "<iframe class=\"embed-responsive-item\" src=\"" + details[i].url + "\" id=\"video\"  allowscriptaccess=\"always\">></iframe>";
         html += "</div> </div> </div> </div> </div> </div>";
       }
       
