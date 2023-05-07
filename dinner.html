@@ -10,6 +10,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
          <!-- linking the stylesheet(CSS) -->
     <link rel="stylesheet" type="text/css" href="./dinner.css">
+    <style>
+      body, html {
+      position: relative;
+      background-image: url("image/blurdinner.jpg");
+      background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      } </style>
+      
+      
     
            </head>
 
@@ -17,7 +27,7 @@
 
 <body onload="myfun()">
 
- <h1>DINNER RECIPES</h1>
+ <h1><span>  DINNER RECIPES  </span></h1>
 
  <div class="topnav">
  <a class="active" href="index.html">Home</a>
@@ -30,26 +40,26 @@
    </form> </div> </div>
      <!-- ordered list -->
 <ol id='list'>
-  <li class="food"><a href="#Chapati">Chapati</a></li>
-<li class="food"><a href="#Naan">Naan</a></li>
-<li class="food"><a href="#Paratha">Paratha</a></li>
-<li class="food"><a href="#Veg Kothu Paratta">Veg Kothu Paratta</a></li>
-<li class="food"><a href="#Chicken Kothu Paratta">Chicken Kothu Paratta</a></li>
-<li class="food"><a href="#Egg Kothu Paratta">Egg Kothu Paratta</a></li>
-<li class="food"><a href="#Chicken Kizhi Paratta">Chicken Kizhi Paratta</a></li>
-<li class="food"><a href="#Nool Paratta">Nool Paratta</a></li>
-<li class="food"><a href="#Veg Noodles">Veg Noodles</a></li>
-<li class="food"><a href="#Chicken Noodles">Chicken Noodles</a></li>
-<li class="food"><a href="#Egg Noodles">Egg Noodles</a></li>
-<li class="food"><a href="#Ragi Dosa">Ragi Dosa</a></li>
-<li class="food"><a href="#Wheat Dosa">Wheat Dosa</a></li>
-<li class="food"><a href="#Rava Dosa">Rava Dosa</a></li>
-<li class="food"><a href="#Rava Idli">Rava Idli</a></li>
-<li class="food"><a href="#Mini Sambar Idli">Mini Sambar Idli</a></li>
-<li class="food"><a href="#Semiya Upma">Semiya Upma</a></li>
-<li class="food"><a href="#Ragi Semmiya">Ragi Semmiya</a></li>
-<li class="food"><a href="#Tomato Onion uttapam">Tomato Onion uttapam</a></li>
-<li class="food"><a href="#Phulka">Phulka</a></li>
+  <li class="food"><a href="#Chapati"><span>Chapati</span></a></li>
+<li class="food"><a href="#Naan"><span>Naan</span></a></li>
+<li class="food"><a href="#Paratha"><span>Paratha</span></a></li>
+<li class="food"><a href="#Veg Kothu Paratta"><span>Veg Kothu Paratta</span></a></li>
+<li class="food"><a href="#Chicken Kothu Paratta"><span>Chicken Kothu Paratta</span></a></li>
+<li class="food"><a href="#Egg Kothu Paratta"><span>Egg Kothu Paratta</span></a></li>
+<li class="food"><a href="#Chicken Kizhi Paratta"><span>Chicken Kizhi Paratta</span></a></li>
+<li class="food"><a href="#Nool Paratta"><span>Nool Paratta</span></a></li>
+<li class="food"><a href="#Veg Noodles"><span>Veg Noodles</span></a></li>
+<li class="food"><a href="#Chicken Noodles"><span>Chicken Noodles</span></a></li>
+<li class="food"><a href="#Egg Noodles"><span>Egg Noodles</span></a></li>
+<li class="food"><a href="#Ragi Dosa"><span>Ragi Dosa</span></a></li>
+<li class="food"><a href="#Wheat Dosa"><span>Wheat Dosa</span></a></li>
+<li class="food"><a href="#Rava Dosa"><span>Rava Dosa</span></a></li>
+<li class="food"><a href="#Rava Idli"><span>Rava Idli</span></a></li>
+<li class="food"><a href="#Mini Sambar Idli"><span>Mini Sambar Idli</span></a></li>
+<li class="food"><a href="#Semiya Upma"><span>Semiya Upma</span></a></li>
+<li class="food"><a href="#Ragi Semmiya"><span>Ragi Semmiya</span></a></li>
+<li class="food"><a href="#Tomato Onion uttapam"><span>Tomato Onion uttapam</span></a></li>
+<li class="food"><a href="#Kothu Chappati"><span>Kothu Chappati</span></a></li>
 </ol>
 
 <!-- linking javascript -->
@@ -159,7 +169,14 @@
         'img': "image/Phulka.jpg",
         'name': "Phulka",
         'url': "https://www.youtube.com/embed/cZ6ttmeVAuA"
-      }];
+      },
+      {
+        'img': "image/kothuchap.jpg",
+        'name': "Kothu Chappati",
+        'url': "https://www.youtube.com/embed/jN62b135Kio"
+      },
+      
+    ];
       
       var html = "";
       for (var i = 0, l = details.length; l > i; i++) {
