@@ -29,15 +29,36 @@
 
  <h1><span>  BEVERAGES  </span></h1>
 
- <div class="topnav">
- <a class="active" href="index.html">Home</a>
- 
- <!-- input tag -->
- <div class="search-container">
- <form action="/action_page.php">
- <input id="searchbar" onkeyup="search_food()" type="text"
-     name="search" placeholder="Search food..">
-   </form> </div> </div>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Receipes 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="breakfast.html">Breakfast</a>
+      <a href="lunch.html">Lunch</a>
+      <a href="dinner.html">Dinner</a>
+      <a href="SideDishesForTiffenAndLunch.html">SideDishesForTiffenAndLunch</a>
+      <a href="snacks.html">Snacks</a>
+      <a href="JuicesAndShakes.html">Juices And Shakes</a>
+      <a href="beverages.html">Beverages</a>
+      <a href="sweets.html">Sweets And Desserts</a>
+      <a href="nonveg.html">Non-veg Starters</a>
+      <a href="veg.html">Veg Starters</a>
+
+    </div>
+  </div> 
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+    <input id="searchbar" onkeyup="search_food()" type="text"
+        name="search" placeholder="Search food..">
+      </form> 
+     </div>
+</div>
+
      <!-- ordered list -->
 <ol id='list'>
   <li class="food"><a href="#Strawberry Lemonade"><span>Strawberry Lemonade</span></a></li>
@@ -358,7 +379,14 @@ function search_food() {
 		}
 	}
 } </script>
-
+<div class="center">
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a class="active" href="#">1</a>
+  <a href="breakfast1.html">2</a>
+  <a href="breakfast2.html">3</a>
+  <a href="#">&raquo;</a>
+</div>
+</div>
      </body>
 </html>
-
