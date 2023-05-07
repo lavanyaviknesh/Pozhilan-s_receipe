@@ -281,6 +281,7 @@ div.image{
   }
 
   .pagination {
+    background-color: white;
     color: black;
     float: right;
   }
