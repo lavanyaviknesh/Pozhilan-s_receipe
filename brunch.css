@@ -25,7 +25,7 @@ div.image img {
    display:flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-between;
+
  }
 
 /* Style the links inside the navigation bar */
@@ -64,7 +64,7 @@ div.image img {
       display:flex;
       flex-flow: row nowrap;
       align-items: center;
-      justify-content: space-between;
+      float: right;
   }
 
 body { 
@@ -242,3 +242,4 @@ div.image{
   ul li {
     color: rgb(242, 11, 11);
   }
+  
