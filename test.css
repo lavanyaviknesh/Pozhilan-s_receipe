@@ -6,6 +6,7 @@ div.image {
   height: 300px; 
 }
 
+
 div.image:hover {
   border: 3px solid #777;
 
