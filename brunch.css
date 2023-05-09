@@ -31,7 +31,7 @@ div.image img {
 /* Style the links inside the navigation bar */
  .topnav a {
   float: left;
-  color: #7957b1;
+  color: white;
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
@@ -50,7 +50,7 @@ div.image img {
     padding: 8px;
     margin-top: 8px;
     margin-right: 8px;
-    background:purple;
+    background:rgb(14, 14, 42);
     font-size: 17px;
     border: none;
     cursor: pointer;
@@ -69,7 +69,7 @@ div.image img {
 
 body { 
 color:rgb(141, 10, 10);
-background-color: #0b7dda;
+background-color: blue;
 }
 div.image{
 color: black;
@@ -78,7 +78,7 @@ background-color:black;
 div.desc{
 padding: 15px;
 text-align: center;
-color:rgb(78, 8, 217);
+color:whitesmoke;
 }
 
 h1{
@@ -192,7 +192,7 @@ div.image{
   float: left;
   width: 20%;
   padding: 10px;
-  background: #2196F3;
+  background: white;
   color: rgb(228, 12, 12);
   font-size: 17px;
   border: 1px solid rgb(10, 79, 163);
@@ -242,4 +242,12 @@ div.image{
   ul li {
     color: rgb(242, 11, 11);
   }
+  .dropdown button {
+    background-color:rgb(9, 9, 41);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+  }
   
+  .dropdown-menu{
+    background-color:black;
+  }

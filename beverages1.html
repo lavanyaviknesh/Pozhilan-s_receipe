@@ -29,38 +29,17 @@
 
  <h1><span>  BEVERAGES  </span></h1>
 
- <div class="topnav"></div>
-
- <a class="active" href="index.html">Home</a>
-
- <div class="dropdown"></div>
-  <button class="dropbtn">Receipes <script>onclick="myFunction()">Dropdown</script> 
-    
-    
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-content">
-    <a href="breakfast.html">Breakfast</a>
-    <a href="lunch.html">Lunch</a>
-    <a href="dinner.html">Dinner</a>
-    <a href="SideDishesForTiffenAndLunch.html">SideDishesForTiffenAndLunch</a>
-    <a href="snacks.html">Snacks</a>
-    <a href="JuicesAndShakes.html">Juices And Shakes</a>
-    <a href="beverages.html">Beverages</a>
-    <a href="sweets.html">Sweets And Desserts</a>
-    <a href="nonveg.html">Non-veg Starters</a>
-    <a href="veg.html">Veg Starters</a>
-
-  </div>
- 
- <!-- input tag -->
- <div class="search-container">
- <form action="/action_page.php">
- <input id="searchbar" onkeyup="search_food()" type="text"
-     name="search" placeholder="Search food..">
-   </form> 
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  </div> 
+  <div class="search-container">
+    <form action="/action_page.php">
+    <input id="searchbar" onkeyup="search_food()" type="text"
+        name="search" placeholder="Search food..">
+      </form> 
+     </div>
 </div>
- </div>
+
      <!-- ordered list -->
 <ol id='list'>
   <li class="food"><a href="#Strawberry Lemonade"><span>Strawberry Lemonade</span></a></li>
@@ -101,76 +80,72 @@
   <li class="food"><a href="#Herbal Tea"><span>Herbal Tea</span></a></li>
 </ol>
 <div class="pagination">
-  <a href="beverages.html">&laquo;</a>
+  <a href="juices2.html">&laquo;</a>
   <a href="beverages.html">1</a>
   <a class="active" href="#">2</a>
   <a href="beverages2.html">3</a>
   <a href="beverages3.html">4</a>
-  <a href="beverages2.html">&raquo;</a>
+  <a href="beverages1.html">&raquo;</a>
 </div>
-
 <!-- linking javascript -->
 <script src="./food.js"></script>
-
-  
  
     <p id="beverages"></p>
 
     <script type="text/javascript">
       function myfun() {
-      var details = [
-      {
-        'img': "image/pinmoj.jpg",
-        'name': "Pineapple Mojito",
-        'url':"https://www.youtube.com/embed/ifXulodiUZc"
+      var details = [{
+        'img': "image/strlem.jpg",
+        'name': "Strawberry Lemonade",
+        'url':"https://www.youtube.com/embed/BUPhAKSknIg"
         
       },
       {
-        'img': "image/cucumoj.jpg",
-        'name': "Cucumber Mojito",
-        'url':"https://www.youtube.com/embed/veIF18QMl6U"
+        'img': "image/virmoj.jpg",
+        'name': "Virgin Mojito",
+        'url':"https://www.youtube.com/embed/Z70Tp2oJKRE"
         
       },
       {
-        'img': "image/peamoj.jpg",
-        'name': "Peach Mojito",
-        'url':"https://www.youtube.com/embed/uyCrZKLEfz8"
+        'img': "image/strmoj.jpg",
+        'name': "Strawberry Mojito",
+        'url':"https://www.youtube.com/embed/YcPrCdT5-pQ"
         
       },
       {
-        'img': "image/grapemoj.jpg",
-        'name': "Green Grape Mojito",
-        'url':"https://www.youtube.com/embed/lbNkEyw0cDc"
+        'img': "image/blubermoj.jpg",
+        'name': "Blueberry Mojito",
+        'url':"https://www.youtube.com/embed/XAHWMCuoyGA"
         
       },
       {
-        'img': "image/kiwmoj.jpg",
-        'name': "Kiwi Mojito",
-        'url':"https://www.youtube.com/embed/dq4Yl6iKB2o"
+        'img': "image/blulagmoj.jpg",
+        'name': "BlueLagoon Mojito",
+        'url':"https://www.youtube.com/embed/1nKHmFCScAc"
         
       },
       {
-        'img': "image/nansar.jpg",
-        'name': "Nannari Sarbath",
-        'url':"https://www.youtube.com/embed/a5h65EN4Zjo"
+        'img': "image/blaber.jpg",
+        'name': "Blackberry Mojito",
+        'url':"https://www.youtube.com/embed/RzI4RX0xx7U"
         
       },
       {
-        'img': "image/milsar.jpg",
-        'name': "Milk Sarbath",
-        'url':"https://www.youtube.com/embed/bqXLTPKVnlE"
+        'img': "image/watorgmoj.jpg",
+        'name': "Watermelon & Orange Mojito",
+        'url':"https://www.youtube.com/embed/PXhctNkZAPI"
         
       },
       {
-        'img': "image/badmil.jpg",
-        'name': "Badam Milk",
-        'url':"https://www.youtube.com/embed/aQkISR4yoak"
+        'img': "image/tencoc.jpg",
+        'name': "Tender Coconut Mojito",
+        'url':"https://www.youtube.com/embed/2I3W6hD69rI"
         
       },
       {
-        'img': "image/rosmil.jpg",
-        'name': "Rose Milk",
-        'url':"https://www.youtube.com/embed/Q8Bzxe-SffQ"
+        'img': "image/manmoj.jpg",
+        'name': "Mango Mojito & Lemonade",
+        'url':"https://www.youtube.com/embed/ENjWI_kPIe4"
         
       },
       ];
@@ -233,14 +208,14 @@ function search_food() {
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <div class="center">
-<div class="pagination">
-    <a href="beverages.html">&laquo;</a>
+  <div class="pagination">
+    <a href="juices2.html">&laquo;</a>
     <a href="beverages.html">1</a>
     <a class="active" href="#">2</a>
     <a href="beverages2.html">3</a>
     <a href="beverages3.html">4</a>
-    <a href="beverages2.html">&raquo;</a>
+    <a href="beverages1.html">&raquo;</a>
+  </div>
   </div>
      </body>
 </html>
-

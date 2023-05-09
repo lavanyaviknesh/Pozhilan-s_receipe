@@ -306,3 +306,15 @@ div.image{
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+ul li {
+  color: rgb(242, 11, 11);
+}
+.dropdown button {
+  background-color:rgb(9, 9, 41);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+.dropdown-menu{
+  background-color:black;
+}

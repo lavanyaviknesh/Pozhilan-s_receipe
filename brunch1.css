@@ -1,0 +1,304 @@
+
+div.image {
+    margin: 20px;
+    border: 3px solid #ccc;
+    float: left;
+    width: 300px;
+    height: 300px; 
+  }
+  
+  div.image:hover {
+    border: 3px solid #777;
+    
+  
+  }
+  
+  div.image img {
+    width: 100%;
+    height: 80%;
+    border-radius: 75%;
+  
+  }
+  /* Add a black background color to the top navigation */
+   .topnav {
+   background-color:rgba(44, 45, 41, 0.911);
+     display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  
+   }
+  
+  /* Style the links inside the navigation bar */
+   .topnav a {
+    float: left;
+    color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+  }
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    }
+    
+    .topnav.search-container button {
+      float: right;
+      padding: 8px;
+      margin-top: 8px;
+      margin-right: 8px;
+      background:purple;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+      }
+    
+    .topnav .search-container button:hover {
+    background:rgb(165, 5, 5);
+    }
+  
+      .topnav .search-container {
+        display:flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        float: right;
+    }
+  
+  body { 
+  color:rgb(141, 10, 10);
+  background-color: #0b7dda;
+  }
+  div.image{
+  color: black;
+  background-color:black;
+  }
+  div.desc{
+  padding: 15px;
+  text-align: center;
+  color:whitesmoke;
+  }
+  
+  h1{
+  padding: 15px;
+  text-align: center;
+  color: black;
+  }
+  h1 span {
+    background-color: #333;
+    border-radius: 15px;
+    white-space: pre-wrap;
+  }
+  a {
+    color: rgb(13, 216, 91);
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  ol li
+  { display: none }
+  div.image{
+    color: black;
+      background-color:black;
+    }
+    
+    
+    
+    body {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+  
+    
+  
+    
+    @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: right;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 1px;
+    } 
+    
+    }
+    
+    .container
+    {
+    margin: top 10px;
+    }
+    h1
+    {
+    margin-bottom: 10px !important;
+    color:whitesmoke;
+    }
+    .play-btn
+    {
+    width:50px;
+    position:relative;
+    top:-50%;
+    cursor:pointer;
+    transition:0.5s;
+    opacity:0;
+    }
+    .col-md-4:hover .play-btn
+    {
+    opacity: 5;
+    }
+    
+    .videomodal .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+    }    
+    .videomodal .modal-body {
+    position:relative;
+    padding:0px;
+    }
+    .videomodal .close {
+    position:absolute;
+    right:-30px;
+    top:0;
+    z-index:999;
+    font-size:2rem;
+    font-weight: normal;
+    color:#f70808;
+    opacity:1;
+    }
+    .cursor-pointer{
+    cursor: pointer;
+    }
+    
+    * {
+    box-sizing: border-box;
+    }
+    
+    form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid rgb(2, 56, 29);
+    float: left;
+    width: 80%;
+    background: #014f27;
+    }
+    
+    form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: rgb(228, 12, 12);
+    font-size: 17px;
+    border: 1px solid rgb(10, 79, 163);
+    border-left: none;
+    cursor: pointer;
+    }
+    
+    form.example button:hover {
+    background: #0b7dda;
+    }
+    
+    form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    #searchbar{
+    margin-right: 82%;
+    padding:3px;
+    border-radius: 3px;
+    }
+    
+    input[type=text] {
+    width: 70%;
+    }
+    
+    /* When the input field gets focus,
+      change its width to 100% */
+    input[type=text]:focus {
+    width: 70%;
+    }
+    
+    #list{
+    font-size: 1.5em;
+    margin-left: 90px;
+    }
+    
+    .image{
+    display: list-item;	
+    }
+    #myDIV {
+      width: 500px;
+      height: 500px;
+      background-color: lightblue;
+    }
+  
+    ul li {
+      color: rgb(242, 11, 11);
+    }
+    .custom-select {
+        position: relative;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+      
+      .custom-select select {
+        display: none; /*hide original SELECT element:*/
+      }
+      
+      .select-selected {
+        background-color: rgb(27, 27, 33);
+      }
+      
+      /*style the arrow inside the select element:*/
+      .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #fff transparent transparent transparent;
+      }
+      
+      /*point the arrow upwards when the select box is open (active):*/
+      .select-selected.select-arrow-active:after {
+        border-color: transparent transparent #fff transparent;
+        top: 7px;
+      }
+      
+      /*style the items (options), including the selected item:*/
+      .select-items div,.select-selected {
+        color: #ffffff;
+        padding: 8px ;
+        border: 1px solid transparent;
+        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+        user-select: none;
+      }
+      
+      /*style items (options):*/
+      .select-items {
+        position: absolute;
+        background-color: black;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+      }
+      
+      /*hide the items when the select box is closed:*/
+      .select-hide {
+        display: none;
+      }
+      
+      .select-items div:hover, .same-as-selected {
+        background-color: rgb(65, 61, 61);
+      }
+        
